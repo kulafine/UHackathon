@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         viewPager = (ViewPager)findViewById(R.id.pager);
         next = (Button)findViewById(R.id.next);
         linearLayout =(LinearLayout)findViewById(R.id.layoutdots);
-        viewPager.setAdapter(new SimplePagerAdapter(getSupportFragmentManager()));
+//        viewPager.setAdapter(new SimplePagerAdapter(getSupportFragmentManager()));
         addDots(0);
         next.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            return 2;
+            return 4;
         }
     }
     }

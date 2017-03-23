@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/dots_height"
         android:layout_alignParentTop="true"
-        android:background="@color/colorPrimary"
+
         android:orientation="horizontal"
         android:gravity="center_horizontal"
         >

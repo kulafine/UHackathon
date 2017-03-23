@@ -50,7 +50,7 @@ public class MainActivity extends FragmentActivity{
         linearLayout.removeAllViews();
         for (int i = 0; i < 4; i++) {
             dots[i] = new TextView(this);
-            dots[i].setText(Html.fromHtml("&#45;"));
+            dots[i].setText(Html.fromHtml("&#8226;"));
             dots[i].setTextSize(35);
             dots[i].setTextColor(colorsInactive[CurrentPosition]);
             linearLayout.addView(dots[i]);

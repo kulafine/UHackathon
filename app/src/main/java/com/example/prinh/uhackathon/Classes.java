@@ -36,7 +36,7 @@ public class Classes extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_classes, container, false);
 
-        classes = (Spinner)view.findViewById(R.id.spinnerCustom);
+        classes = (Spinner)view.findViewById(R.id.spinnerClass);
 
         ArrayList<String> cls = new ArrayList<>();
         cls.add("Year1");

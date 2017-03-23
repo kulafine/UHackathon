@@ -93,7 +93,7 @@ public class Classes extends Fragment {
             txt.setGravity(Gravity.CENTER);
             txt.setPadding(16,16,16,16);
             txt.setTextSize(16);
-            txt.setCompoundDrawablesWithIntrinsicBounds(0,0,R.drawable.down_arrow,0);
+            txt.setCompoundDrawablesWithIntrinsicBounds(0,0,R.drawable.sp_down_arrow,0);
             txt.setText(list.get(position));
             txt.setTextColor(Color.parseColor("#20d2bb"));
             return txt;
@@ -105,7 +105,7 @@ public class Classes extends Fragment {
             txt.setGravity(Gravity.CENTER);
             txt.setPadding(16,16,16,16);
             txt.setTextSize(16);
-            txt.setCompoundDrawablesWithIntrinsicBounds(0,0,R.drawable.down_arrow,0);
+            txt.setCompoundDrawablesWithIntrinsicBounds(0,0,R.drawable.sp_down_arrow,0);
             txt.setText(list.get(position));
             txt.setTextColor(Color.parseColor("#20d2bb"));
             return txt;

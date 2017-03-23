@@ -34,7 +34,7 @@ public class Classes extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_classes, container, false);
+        View view = inflater.inflate(R.layout.classes, container, false);
 
         classes = (Spinner)view.findViewById(R.id.spinnerClass);
 

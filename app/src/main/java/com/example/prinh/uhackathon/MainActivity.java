@@ -89,15 +89,17 @@ public class MainActivity extends AppCompatActivity {
 
             switch (position) {
                 case 0:
-                    return new Learn();
+                    return new Profile();
                 case 1:
-                    return new Tools();
+                    return new Classes();
                 case 2:
-                    return new Prog_languages();
+                    return new Languages();
                 case 3:
                     return new Experience();
                 case 4:
-                    return new Profile();
+                    return new Part_languages();
+                case 5:
+                    return new Tools();
                 default:
                     return null;
 
@@ -108,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            return 4;
+            return 5;
         }
     }
     }

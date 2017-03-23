@@ -1,4 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,10 +8,18 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="150dp"
         android:orientation="vertical"
         android:layout_marginTop="30dp"
         android:id="@+id/title">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/medical"/>
+
+
 
         <TextView
             android:layout_width="match_parent"
@@ -33,6 +42,7 @@
             android:layout_height="match_parent"
             android:id="@+id/years"
             android:orientation="vertical"
+            android:layout_marginStart="100dp"
             android:layout_marginLeft="100dp">
 
             <TextView
@@ -48,7 +58,7 @@
                 android:text="2 years"
                 android:textColor="#fff"
                 android:textSize="20sp"
-                android:layout_marginTop="100dp"/>
+                android:layout_marginTop="80dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -56,7 +66,7 @@
                 android:text="1 year"
                 android:textColor="#fff"
                 android:textSize="20sp"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="80dp"
                 android:id="@+id/textView5" />
 
             <TextView
@@ -65,22 +75,22 @@
                 android:text="Never"
                 android:textColor="#fff"
                 android:textSize="20sp"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="80dp"
                 android:id="@+id/textView4" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="340dp"
             android:id="@+id/seekbar"
             android:orientation="vertical"
             android:layout_marginLeft="10dp"
-            android:layout_marginBottom="40dp">
+            android:layout_marginStart="10dp">
 
             <SeekBar
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="334dp"
                 android:id="@+id/seekBar" />
 
         </LinearLayout>

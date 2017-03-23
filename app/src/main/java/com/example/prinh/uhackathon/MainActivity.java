@@ -87,11 +87,11 @@ public class MainActivity extends FragmentActivity{
                 case 0:
                     return new Experience();
                 case 1:
-                    return new Prog_languages();
+                    return new Classes();
                 case 2:
-                    return new Experience();
+                    return new Languages();
                 case 3:
-                    return new Profile();
+                    return new Part_languages();
                 case 4:
                     return new Profile();
                 default:

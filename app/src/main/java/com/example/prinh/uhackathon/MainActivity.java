@@ -1,18 +1,18 @@
 package com.example.prinh.uhackathon;
 
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends FragmentActivity{
     private ViewPager viewPager;
     private TextView[] dots;
     private Button next;
@@ -24,8 +24,8 @@ public class MainActivity extends AppCompatActivity {
         viewPager = (ViewPager)findViewById(R.id.pager);
         next = (Button)findViewById(R.id.next);
         linearLayout =(LinearLayout)findViewById(R.id.layoutdots);
-        viewPager.setAdapter(new SimplePagerAdapter(getSupportFragmentManager()));
-        addDots(0);
+       viewPager.setAdapter(new SimplePagerAdapter(getSupportFragmentManager()));
+       // addDots(0);
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -42,40 +42,36 @@ public class MainActivity extends AppCompatActivity {
     public int getItem(){
         return viewPager.getCurrentItem();
     }
-    private void addDots(int CurrentPosition){
+    private void addDots(int CurrentPosition) {
         dots = new TextView[5];
         int[] colorsActive = getResources().getIntArray(R.array.array_dot_active);
         int[] colorsInactive = getResources().getIntArray(R.array.array_dot_inactive);
 
         linearLayout.removeAllViews();
-        for (int i= 0;i<2;i++){
+        for (int i = 0; i < 5; i++) {
             dots[i] = new TextView(this);
             dots[i].setText(Html.fromHtml("&#45;"));
             dots[i].setTextSize(40);
             dots[i].setTextColor(colorsInactive[CurrentPosition]);
             linearLayout.addView(dots[i]);
         }
-        if (dots.length > 0){
+        if (dots.length > 0)
             dots[CurrentPosition].setTextColor(colorsActive[CurrentPosition]);
-        }
+    }
         ViewPager.OnPageChangeListener viewPageListener = new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
             }
             @Override
             public void onPageSelected(int position) {
-                if(position == 2){
-                    next.setText("Get Started");
-                }else{
-                    next.setText("next");
-                }
+
             }
             @Override
             public void onPageScrollStateChanged(int state) {
 
             }
         };
-    }
+
     public class SimplePagerAdapter extends FragmentPagerAdapter {
 
 
@@ -108,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            return 2;
+            return 5;
         }
     }
     }

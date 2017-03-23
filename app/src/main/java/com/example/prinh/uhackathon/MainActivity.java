@@ -30,7 +30,7 @@ public class MainActivity extends FragmentActivity{
             @Override
             public void onClick(View v) {
                 int current = getItem()+1;
-                if (current<4){
+                if (current<6){
                     viewPager.setCurrentItem(current);
                 }else{
                     //launch home Activity
@@ -43,12 +43,12 @@ public class MainActivity extends FragmentActivity{
         return viewPager.getCurrentItem();
     }
     private void addDots(int CurrentPosition) {
-        dots = new TextView[5];
+        dots = new TextView[6];
         int[] colorsActive = getResources().getIntArray(R.array.array_dot_active);
         int[] colorsInactive = getResources().getIntArray(R.array.array_dot_inactive);
 
         linearLayout.removeAllViews();
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 5; i++) {
             dots[i] = new TextView(this);
             dots[i].setText(Html.fromHtml("&#8226;"));
             dots[i].setTextSize(35);
@@ -65,6 +65,7 @@ public class MainActivity extends FragmentActivity{
             @Override
             public void onPageSelected(int position) {
 
+            addDots(position);
             }
             @Override
             public void onPageScrollStateChanged(int state) {
@@ -85,14 +86,16 @@ public class MainActivity extends FragmentActivity{
 
             switch (position) {
                 case 0:
-                    return new Experience();
-                case 1:
-                    return new Classes();
-                case 2:
                     return new Languages();
-                case 3:
+                case 1:
+                    return new Experience();
+                case 2:
                     return new Part_languages();
+                case 3:
+                    return new Tools();
                 case 4:
+                    return new Classes();
+                case 5:
                     return new Profile();
                 default:
                     return null;
@@ -104,7 +107,7 @@ public class MainActivity extends FragmentActivity{
 
         @Override
         public int getCount() {
-            return 5;
+            return 6;
         }
     }
     }

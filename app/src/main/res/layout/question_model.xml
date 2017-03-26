@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:gravity="center"
+            android:maxLines="2"
+            android:textSize="17dp"
+            android:text="Hey! can you tell us what course you are studying \n and in which class are you? "
+            android:textStyle="italic"
+            android:layout_marginBottom="0dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/custom_spinner_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+
+       >
+        <Spinner
+            android:layout_margin="20dp"
+            android:background="@drawable/custom_spinner_background"
+            android:spinnerMode="dropdown"
+            android:id="@+id/spinnerCustom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+

@@ -6,15 +6,15 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class MainActivity extends FragmentActivity{
+    private String[] level ={"1 of 6 ","2 of 6","3 of 6"," 4 of 6","5 of 6","6 of 6"};
     private ViewPager viewPager;
-    private TextView[] dots;
+    private TextView  leveltrack;
     private Button next;
     private LinearLayout linearLayout;
     @Override
@@ -23,14 +23,16 @@ public class MainActivity extends FragmentActivity{
         setContentView(R.layout.activity_main);
         viewPager = (ViewPager)findViewById(R.id.pager);
         next = (Button)findViewById(R.id.next);
-        linearLayout =(LinearLayout)findViewById(R.id.layoutdots);
+        leveltrack = (TextView)findViewById(R.id.step);
        viewPager.setAdapter(new SimplePagerAdapter(getSupportFragmentManager()));
-        addDots(0);
+
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int current = getItem()+1;
+                int current = getItem(+1);
+                leveltrack.setText(level[current]);
                 if (current<6){
+
                     viewPager.setCurrentItem(current);
                 }else{
                     //launch home Activity
@@ -39,24 +41,10 @@ public class MainActivity extends FragmentActivity{
         });
     }
 
-    public int getItem(){
-        return viewPager.getCurrentItem();
-    }
-    private void addDots(int CurrentPosition) {
-        dots = new TextView[6];
-        int[] colorsActive = getResources().getIntArray(R.array.array_dot_active);
-        int[] colorsInactive = getResources().getIntArray(R.array.array_dot_inactive);
 
-        linearLayout.removeAllViews();
-        for (int i = 0; i < 5; i++) {
-            dots[i] = new TextView(this);
-            dots[i].setText(Html.fromHtml("&#8226;"));
-            dots[i].setTextSize(35);
-            dots[i].setTextColor(colorsInactive[CurrentPosition]);
-            linearLayout.addView(dots[i]);
-        }
-        if (dots.length > 0)
-            dots[CurrentPosition].setTextColor(colorsActive[CurrentPosition]);
+
+    public int getItem(int i){
+        return viewPager.getCurrentItem()+i;
     }
         ViewPager.OnPageChangeListener viewPageListener = new ViewPager.OnPageChangeListener() {
             @Override
@@ -64,12 +52,12 @@ public class MainActivity extends FragmentActivity{
             }
             @Override
             public void onPageSelected(int position) {
+                leveltrack.setText(level[position]);
 
-            addDots(position);
             }
             @Override
             public void onPageScrollStateChanged(int state) {
-
+                leveltrack.setText(level[state]);
             }
         };
 
@@ -86,9 +74,11 @@ public class MainActivity extends FragmentActivity{
 
             switch (position) {
                 case 0:
-                    return new Languages();
+             return new question_model();
+                    
+
                 case 1:
-                    return new Experience();
+                    return new question_model();
                 case 2:
                     return new Part_languages();
                 case 3:
@@ -107,7 +97,7 @@ public class MainActivity extends FragmentActivity{
 
         @Override
         public int getCount() {
-            return 6;
+            return 5;
         }
     }
     }

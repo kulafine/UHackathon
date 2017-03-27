@@ -21,11 +21,11 @@ import java.util.ArrayList;
  * Created by DAVID on 3/26/2017.
  */
 
-public class question_model extends Fragment {
+public class question_one extends Fragment {
     Spinner spinner;
     ArrayList<String> languages = new ArrayList<String>();
 
-    public question_model() {
+    public question_one() {
     }
 
     @Override

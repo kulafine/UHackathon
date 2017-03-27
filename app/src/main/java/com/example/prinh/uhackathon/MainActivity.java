@@ -35,7 +35,7 @@ public class MainActivity extends FragmentActivity{
 
                     viewPager.setCurrentItem(current);
                 }else{
-                    //launch home Activity
+
                 }
             }
         });

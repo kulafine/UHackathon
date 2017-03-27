@@ -36,7 +36,7 @@
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="JAVA"
+            android:text="Java"
             android:id="@+id/jva" />
 
         <CheckBox
@@ -73,9 +73,6 @@
             android:text="None"
             android:id="@+id/nne"
             android:layout_marginTop="10dp"/>
-
-
-
 
     </LinearLayout>
 

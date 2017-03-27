@@ -23,9 +23,7 @@
         android:background="@drawable/custom_spinner_background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-
-       >
+        android:gravity="center">
         <Spinner
             android:layout_margin="20dp"
             android:background="@drawable/custom_spinner_background"

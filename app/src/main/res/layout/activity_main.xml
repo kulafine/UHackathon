@@ -15,10 +15,10 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-       android:layout_alignParentTop="true">
+       android:layout_alignParentBottom="true">
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="80dp"
+            android:layout_height="50dp"
             android:text="1 of 5"
             android:id="@+id/step"
             android:textStyle="bold|italic"
@@ -31,7 +31,7 @@
         <Button
             android:id="@+id/next"
             android:layout_width="140dp"
-            android:layout_height="80dp"
+            android:layout_height="50dp"
             android:text="NEXT"
             android:textColor="#fff"
 

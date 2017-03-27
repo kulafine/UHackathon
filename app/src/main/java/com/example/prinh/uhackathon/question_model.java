@@ -30,7 +30,7 @@ public class question_model extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstance) {
-        View view = inflater.inflate(R.layout.question_model, container, false);
+        View view = inflater.inflate(R.layout.question_one, container, false);
         spinner = (Spinner) view.findViewById(R.id.spinnerCustom);
         languages.add("YEAR ONE");
         languages.add("YEAR TWO");

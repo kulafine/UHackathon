@@ -77,7 +77,7 @@ public class MainActivity extends FragmentActivity{
              return new question_one();
 
                 case 1:
-                    return new Question_two();
+                    return new Question_three();
                 case 2:
                     return new Question_three();
                 case 3:

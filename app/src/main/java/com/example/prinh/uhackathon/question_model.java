@@ -93,7 +93,7 @@ public class question_model extends Fragment {
             txt.setGravity(Gravity.CENTER);
             txt.setPadding(16, 16, 16, 16);
             txt.setTextSize(16);
-            txt.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_down, 0);
+            txt.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.down, 0);
             txt.setText(asr.get(i));
             txt.setTextColor(Color.parseColor("#14a895"));
             return  txt;

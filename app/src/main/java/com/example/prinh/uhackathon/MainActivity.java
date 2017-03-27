@@ -74,19 +74,17 @@ public class MainActivity extends FragmentActivity{
 
             switch (position) {
                 case 0:
-             return new question_model();
-                    
-
+                    return new question_one();
                 case 1:
-                    return new question_model();
+                    return new question_two();
                 case 2:
-                    return new Part_languages();
+                    return new question_three();
                 case 3:
-                    return new Tools();
+                    return new question_four();
                 case 4:
-                    return new Classes();
+                    return new question_five();
                 case 5:
-                    return new Profile();
+                    return new question_six();
                 default:
                     return null;
 

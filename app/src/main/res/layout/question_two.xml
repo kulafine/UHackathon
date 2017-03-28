@@ -14,7 +14,7 @@
             android:gravity="center"
             android:maxLines="2"
             android:textSize="17dp"
-            android:text="Amigo tell me , have you code  \n before and for how long?"
+            android:text=" If you have been programming \n in which language do you code? "
             android:textStyle="italic"
             android:layout_marginBottom="0dp"/>
     </LinearLayout>
@@ -25,46 +25,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center">
-
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/radiogroup"
-            android:gravity="center"
-
-            android:orientation="vertical">
-
-            <RadioButton
-
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:textSize="20dp"
-                android:textStyle="italic"
-                android:textColor="@color/dot_dark_screen2"
-                android:text="more than one year"/>
-
-            <RadioButton
-             android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:textSize="20dp"
-                android:textStyle="italic"
-                android:textColor="@color/dot_dark_screen2"
-                android:text="less than one year"/>
-
-            <RadioButton
-
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:textSize="20dp"
-                android:textStyle="italic"
-                android:textColor="@color/dot_dark_screen2"
-                android:text="oops! I never code"/>
-
-        </RadioGroup>
-
-
 
 
 

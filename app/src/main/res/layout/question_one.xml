@@ -14,7 +14,7 @@
             android:gravity="center"
             android:maxLines="2"
             android:textSize="17dp"
-            android:text="Tell us your experience in Programmming"
+            android:text="Choose a programming language you know"
             android:textStyle="italic"
             android:layout_marginBottom="0dp"/>
     </LinearLayout>
@@ -26,44 +26,16 @@
         android:layout_height="match_parent"
         android:gravity="center">
 
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent">
 
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="3 Years"
-                android:layout_marginTop="100dp"
-                android:id="@+id/y3"/>
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="2 Years"
-                android:layout_marginTop="20dp"
-                android:id="@+id/y2"/>
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="1 Year"
-                android:layout_marginTop="20dp"
-                android:id="@+id/y1"/>
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Never"
-                android:layout_marginTop="20dp"
-                android:id="@+id/nv"/>
-
-        </RadioGroup>
 
 
 
     </LinearLayout>
+
+
+
 
 </LinearLayout>
 

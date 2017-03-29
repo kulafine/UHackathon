@@ -31,7 +31,7 @@ public class question_one extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstance) {
         View view = inflater.inflate(R.layout.question_one, container, false);
-        spinner = (Spinner) view.findViewById(R.id.spinnerCustom);
+//        spinner = (Spinner) view.findViewById(R.id.spinnerCustom);
         languages.add("YEAR ONE");
         languages.add("YEAR TWO");
         languages.add("YEAR THREE");

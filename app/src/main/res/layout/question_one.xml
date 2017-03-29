@@ -1,43 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginBottom="50dp"
-    android:background="#006DF0">
+    android:layout_marginBottom="50dp">
 
-
-    <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:src="@mipmap/ic_launcher"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/imageView" />
-
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Tell us how long you have been coding"
-        android:layout_below="@+id/imageView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="21dp"
-        android:id="@+id/textView"
-        android:textAlignment="center"
-        android:textColor="#fff"
-        android:textSize="20sp"/>
+        android:layout_height="wrap_content">
+        <TextView
 
-    <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:gravity="center"
+            android:maxLines="2"
+            android:textSize="17dp"
+            android:text="Amigo tell me , have you code  \n before and for how long?"
+            android:textStyle="italic"
+            android:layout_marginBottom="0dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/custom_spinner_background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/textView">
+        android:gravity="center">
 
 
 
+    </LinearLayout>
 
-    </RadioGroup>
-
-
-</RelativeLayout>
+</LinearLayout>
 
 

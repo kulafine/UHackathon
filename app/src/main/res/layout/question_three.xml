@@ -27,6 +27,35 @@
         android:gravity="center">
 
 
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:id="@+id/spinnerCustom"
+            android:background="@drawable/custom_spinner_background">
+
+        </Spinner>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#14a895"
+                android:textSize="20dp"
+                android:text="computer \n science"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#14a895"
+                android:textSize="20dp"
+                android:text="economic \n (ebs)"/>
+
+
+        </RadioGroup>
+
+
 
     </LinearLayout>
 

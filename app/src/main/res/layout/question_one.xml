@@ -45,7 +45,8 @@
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"/>
+                android:layout_marginTop="8dp"
+                android:id="@+id/jva"/>
 
         </LinearLayout>
 
@@ -64,7 +65,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:checked="true"/>
+                android:checked="true"
+                android:id="@+id/and"/>
 
         </LinearLayout>
 
@@ -82,7 +84,8 @@
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"/>
+                android:layout_marginTop="8dp"
+                android:id="@+id/cs"/>
 
         </LinearLayout>
 
@@ -100,7 +103,8 @@
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"/>
+                android:layout_marginTop="8dp"
+                android:id="@+id/ph"/>
 
         </LinearLayout>
 
@@ -117,7 +121,8 @@
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"/>
+                android:layout_marginTop="8dp"
+                android:id="@+id/htm"/>
 
         </LinearLayout>
 
@@ -139,7 +144,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:layout_marginRight="13dp"/>
+                android:layout_marginRight="13dp"
+                android:id="@+id/nne"/>
 
 
 

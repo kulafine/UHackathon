@@ -17,6 +17,7 @@ public class MainActivity extends FragmentActivity{
     private TextView  leveltrack;
     private Button next;
     private LinearLayout linearLayout;
+    private ServerPost serverPost;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,11 +25,13 @@ public class MainActivity extends FragmentActivity{
         viewPager = (ViewPager)findViewById(R.id.pager);
         next = (Button)findViewById(R.id.next);
         leveltrack = (TextView)findViewById(R.id.step);
-       viewPager.setAdapter(new SimplePagerAdapter(getSupportFragmentManager()));
+        viewPager.setAdapter(new SimplePagerAdapter(getSupportFragmentManager()));
+        serverPost = new ServerPost();
 
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 int current = getItem(+1);
                 leveltrack.setText(level[current]);
                 if (current<6){
@@ -46,6 +49,7 @@ public class MainActivity extends FragmentActivity{
         ViewPager.OnPageChangeListener viewPageListener = new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
             }
             @Override
             public void onPageSelected(int position) {

@@ -32,10 +32,7 @@ public class MainActivity extends FragmentActivity{
                 int current = getItem(+1);
                 leveltrack.setText(level[current]);
                 if (current<6){
-
                     viewPager.setCurrentItem(current);
-                }else{
-
                 }
             }
         });

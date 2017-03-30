@@ -31,8 +31,14 @@ public class question_one extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstance) {
         View view = inflater.inflate(R.layout.question_one, container, false);
 
+
+
         return view;
+
+
     }
+
+
 
 
 }

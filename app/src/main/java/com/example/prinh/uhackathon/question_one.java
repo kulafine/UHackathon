@@ -1,21 +1,11 @@
 package com.example.prinh.uhackathon;
 
-import android.content.Context;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.support.annotation.BoolRes;
 import android.support.v4.app.Fragment;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemSelectedListener;
-import android.widget.BaseAdapter;
 import android.widget.CheckBox;
-import android.widget.Spinner;
-import android.widget.SpinnerAdapter;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -54,7 +44,7 @@ public class question_one extends Fragment {
 
     }
 
-    public boolean isLanguageThere(ArrayList<String> language, String name){
+    public boolean languageIsFound(ArrayList<String> language, String name){
         for (int i=0; i<=language.size(); i++){
             if (language.get(i) == name){
                 return true;
@@ -74,24 +64,34 @@ public class question_one extends Fragment {
         switch (v.getId()){
 
             case R.id.jva:
-                if (isLanguageThere(lngs,"java")){
+                if (languageIsFound(lngs,"java")){
 
                 }
                 break;
             case R.id.ph:
-                lngs.add("php");
+                if (languageIsFound(lngs,"php")){
+
+                }
                 break;
             case R.id.cs:
-                lngs.add("css");
+                if (languageIsFound(lngs,"css")){
+
+                }
                 break;
             case R.id.and:
-                lngs.add("android");
+                if (languageIsFound(lngs,"android")){
+
+                }
                 break;
             case R.id.nne:
-                lngs.add("none");
+                if (languageIsFound(lngs,"none")){
+
+                }
                 break;
             case R.id.htm:
-                lngs.add("html");
+                if (languageIsFound(lngs,"html")){
+
+                }
                 break;
 
         }
